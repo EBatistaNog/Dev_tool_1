@@ -1,0 +1,176 @@
+/* Reset e configurações globais */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #b11f1f;
+}
+
+/* Configurações de header */
+header a,
+header a:visited,
+header a:hover,
+header a:focus,
+header a:active {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 50px auto;
+}
+
+/* Configurações de footer */
+footer {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Estilos gerais de formatação */
+form div {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Estilos adicionais para <select> */
+select {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  width: auto;
+}
+
+/* Configurações do conteúdo central */
+.content-center {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid rgb(245, 245, 245);
+}
+
+.content-center label {
+  font-size: 11px; /* Altere este valor para ajustar o tamanho da fonte */
+  display: block; /* Faz a label ocupar sua própria linha */
+  text-align: left; /* Alinha todo o conteúdo à esquerda */
+}
+
+/* Estilização de elementos dentro de .content-center */
+.content-center .text-center,
+.content-center img,
+.content-center form,
+.content-center input,
+.content-center button {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.content-center img {
+  width: 70%;
+}
+
+/* Estilização de inputs e botões */
+.content-center input,
+.content-center button {
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+}
+
+.content-center input {
+  border-bottom: 2px solid rgb(187, 187, 187);
+  text-align: left; 
+}
+
+.content-center input:focus {
+  border-bottom-color: #a51622;
+}
+
+.content-center button {
+  background-color: #a80d0d;
+  color: #fff;
+}
+
+.content-center button:hover {
+  background-color: #7a2409;
+  cursor: pointer;
+}
+
+.content-center button:active {
+  background-color: #160b03;
+}
+
+.content-center input::placeholder {
+  text-align: left; /* Alinha o texto do placeholder à esquerda */
+  color: rgb(160, 160, 160); /* Altere a cor do placeholder se desejar */
+}
+
+/* Estilos para display de dados */
+#displayDataAccountType,
+#display-data3,
+#display-data4,
+#display-data5 {
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow: auto;
+  font-size: 13px;
+}
+
+/* Títulos e links */
+/* Estilos compartilhados para títulos e links */
+.titulo-setor,
+.titulo-categoria,
+.nome-link {
+  font-size: 12px;
+}
+
+/* Estilos específicos para .titulo-setor */
+.titulo-setor {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #55a808;
+}
+
+/* Estilos específicos para .titulo-categoria */
+.titulo-categoria {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+  display: block;
+}
+
+/* Estilos específicos para .nome-link */
+.nome-link {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.nome-link:hover {
+  text-decoration: underline;
+}

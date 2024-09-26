@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMPRESA</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="https://www.google.com">Tools</a></h1>
+      <nav></nav>
+    </header>
+
+    <!-- Account Type -->
+    <section class="content-center">
+      <h2>Account</h2>
+      <form id="accountTypeForm">
+        <div>
+          <label for="accountType">Account Number:</label>
+          <input type="text" id="accountType" placeholder="Account" required />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <p id="displayDataAccountType"></p>
+      </form>
+    </section>
+
+    <!-- Unix Timestamp Converter -->
+    <section class="content-center">
+      <h2>Unix Timestamp Converter</h2>
+      <form id="timestampConverterForm">
+        <div>
+          <label for="timeConverter">Enter timestamp:</label>
+          <input
+            type="text"
+            id="timeConverter"
+            placeholder="TimeStamp"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <p id="displayDataTimestampConverter"></p>
+      </form>
+    </section>
+
+    <!-- Formulário de login 4 -->
+    <section class="content-center">
+      <h2>Create URL</h2>
+      <form id="createUrlForm">
+        <div>
+          <label for="conta">Entre com a conta:</label>
+          <input type="text" id="accountURL" placeholder="conta" required />
+        </div>
+        <div>
+          <label for="uId">Entre com o usuário:</label>
+          <input type="text" id="uId" placeholder="usuario" required />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <p id="display-data4"></p>
+      </form>
+    </section>
+
+    <!-- Formulário de login 5 -->
+    <section class="content-center">
+      <h2>Links AWS</h2>
+      <form id="form-login5">
+        <div class="select-group">
+          <label for="ambiente-select">Ambiente:</label>
+          <select id="ambiente-select" name="ambiente">
+            <option value="QA">QA</option>
+            <option value="PROD">PROD</option>
+          </select>
+        </div>
+        <div class="select-group">
+          <label for="lado-select">Lado:</label>
+          <select id="lado-select" name="lado">
+            <option value="DIREITA">DIREITA</option>
+            <option value="ESQUERDA">ESQUERDA</option>
+          </select>
+        </div>
+        <div class="select-group">
+          <label for="setor-select">Escolha o Setor:</label>
+          <select id="setor-select">
+            <option value="A">Setor A</option>
+            <option value="B">Setor B</option>
+            <option value="Ambos">Ambos</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <p id="display-data5"></p>
+      </form>
+    </section>
+
+    <!-- Formulário de login 10 -->
+    <section class="content-center">
+      <h2>Query AWS</h2>
+      <form id="form-login10">
+        <div>
+          <label for="filter-text">Nome:</label>
+          <input type="text" id="filter-text" placeholder="Filtrar por Nome" />
+        </div>
+        <div>
+          <label for="test2sss">Crescente ou decre:</label>
+          <select id="test2sss" name="logType">
+            <option value="asc">asc</option>
+            <option value="desc">desc</option>
+          </select>
+        </div>
+        <div>
+          <label for="log-type">Tipo de Log:</label>
+          <select id="log-type" name="logType">
+            <option value="--">--</option>
+            <option value="ERROR">ERROR</option>
+            <option value="INFO">INFO</option>
+            <option value="WARN">WARN</option>
+          </select>
+          <select id="log-type2" name="logType2">
+            <option value="--">--</option>
+            <option value="or">or</option>
+            <option value="and">and</option>
+          </select>
+          <select id="log-type3" name="logType3">
+            <option value="--">--</option>
+            <option value="ERROR">ERROR</option>
+            <option value="INFO">INFO</option>
+            <option value="WARN">WARN</option>
+          </select>
+        </div>
+        <div>
+          <label for="keyword">Palavra-chave:</label>
+          <input type="text" id="keyword" placeholder="Filtrar por Palavra-chave" />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div id="query-results10"></div>
+    </section>
+
+    <footer>
+      <p>
+        <a>teste</a>
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
