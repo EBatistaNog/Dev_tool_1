@@ -26,11 +26,11 @@ function checkAccountType() {
     }
     // Check if the last part is even
     if (parseInt(parts[2], 10) % 2 === 0) {
-      result.push("leftRegion");
+      result.push("Main");
     }
     // Check if the last part is odd
     if (parseInt(parts[2], 10) % 2 !== 0) {
-      result.push("rightRegion");
+      result.push("Secondary");
     }
 
     let accountType = result[0] || '';
@@ -101,17 +101,32 @@ function setupFormLogin5() {
 
     let urlsSetorA = [
       // Adicione mais URLs aqui conforme necessário
-      { url: `www.${ambiente}.lambdaA.${lado}`, nome: '(AuthVIDA)_Lambda Teste A' },
-      { url: `www.${ambiente}.lambdaEEEEEEEEEEEEEEEEEEEEE.${lado}`, nome: '(AuthVIDA)_Lambda Teste A' },
-      { url: `wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww.${ambiente}.lambdaA.${lado}`, nome: 'Lambda' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-1' },
+      { url: `www.${ambiente}.lambdaEEEEEEEEEEEEEEEEEEEEE.${lado}`, nome: 'Lambda-1' },
+      { url: `wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww.${ambiente}.TopicA.${lado}`, nome: 'Topic' },
       { url: `www.${ambiente}.databaseA.${lado}`, nome: 'Banco A' },
-      { url: `www.${ambiente}.databaseA.${lado}`, nome: 'Aleatorio' }
+      { url: `www.${ambiente}.databaseB.${lado}`, nome: 'Banco B ' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-2' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-2' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-2' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda-2' },
     ];
 
     let urlsSetorB = [
       // Adicione mais URLs aqui conforme necessário
       { url: `www.${ambiente}.lambdaB.${lado}`, nome: 'Lambda Teste B' },
-      { url: `www.${ambiente}.databaseB.${lado}`, nome: 'Banco B' }
+      { url: `www.${ambiente}.databaseB.${lado}`, nome: 'Banco B' },
+      { url: `www.${ambiente}.databaseA.${lado}`, nome: 'Banco A' },
+      { url: `www.${ambiente}.databaseB.${lado}`, nome: 'Banco B ' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda1' },
+      { url: `www.${ambiente}.lambdaA.${lado}`, nome: 'Lambda2' },
+
     ];
 
     let htmlOutput = '';

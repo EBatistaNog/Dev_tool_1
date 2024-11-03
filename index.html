@@ -19,7 +19,7 @@
       <form id="accountTypeForm">
         <div>
           <label for="accountType">Account Number:</label>
-          <input type="text" id="accountType" placeholder="Account" required />
+          <input type="text" id="accountType" placeholder="For testing use xx-2-2000" required />
         </div>
         <div>
           <button type="submit">Submit</button>
@@ -72,25 +72,27 @@
       <h2>Links AWS</h2>
       <form id="form-login5">
         <div class="select-group">
-          <label for="ambiente-select">Ambiente:</label>
+          <label for="ambiente-select">Environment</label>
           <select id="ambiente-select" name="ambiente">
-            <option value="QA">QA</option>
+            <option value="QA">DEV</option>
+            <option value="PROD">QA</option>
+            <option value="PROD">STG</option>
             <option value="PROD">PROD</option>
           </select>
         </div>
         <div class="select-group">
-          <label for="lado-select">Lado:</label>
+          <label for="lado-select">Region</label>
           <select id="lado-select" name="lado">
-            <option value="DIREITA">DIREITA</option>
-            <option value="ESQUERDA">ESQUERDA</option>
+            <option value="DIREITA">Main</option>
+            <option value="ESQUERDA">Secondary</option>
           </select>
         </div>
         <div class="select-group">
-          <label for="setor-select">Escolha o Setor:</label>
+          <label for="setor-select">Service</label>
           <select id="setor-select">
-            <option value="A">Setor A</option>
-            <option value="B">Setor B</option>
-            <option value="Ambos">Ambos</option>
+            <option value="A">Service - A</option>
+            <option value="B">Service - B</option>
+            <option value="Ambos">Both Services</option>
           </select>
         </div>
         <div>
