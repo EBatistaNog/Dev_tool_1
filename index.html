@@ -147,7 +147,39 @@
       </form>
       <div id="query-results10"></div>
     </section>
-
+     <!-- Seção que contém o formulário -->
+<section class="content-center">
+  <h2>Query SQL</h2>
+  <form id="form-login11">
+    
+    <!-- Seleção múltipla para tipos de log e lógica de combinação -->
+    <div>
+      <label for="log-type">SELECT</label>
+      <select id="select-field" name="logType">
+        <option value="name">name</option>
+        <option value="age">age</option>
+      </select>
+      <label for="log-type">FROM</label>
+      <select id="from-table" name="logType">
+        <option value="users">users</option>
+        <option value="groups">groups</option>
+      </select>
+    </select>
+    <label for="log-type">ORDER BY</label>
+    <select id="order-by-field" name="logType">
+      <option value="age">age</option>
+      <option value="name">name</option>
+    </select>
+    
+    
+    <!-- Botão de envio -->
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <!-- Div para exibir os resultados da query -->
+  <div id="query-results11"></div>
+</section>
     <footer>
       <p>
         <a>teste</a>

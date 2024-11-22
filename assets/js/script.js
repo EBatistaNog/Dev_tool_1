@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   createUrl();
   setupFormLogin5();
   setupFormLogin10();
+  setupFormListener()
 });
 
 
@@ -252,3 +253,24 @@ function generateQuery(asc, logType, logType2, logType3, filterText, keyword) {
   return baseQuery + filterQuery + limitQuery;
 }
 
+function setupFormListener() {
+  document.querySelector('#form-login11').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    generateSQLQuery(); 
+  });
+}
+function generateSQLQuery() {
+  
+  const selectField = document.getElementById('select-field').value;
+  const fromTable = document.getElementById('from-table').value;
+  const orderByField = document.getElementById('order-by-field').value;
+
+ 
+  let sqlQuery = `SELECT ${selectField} FROM ${fromTable}`;
+  
+  if (orderByField) {
+    sqlQuery += ` ORDER BY ${orderByField}`;
+  }
+
+  document.querySelector('#query-results11').innerHTML = '<em><strong>Query:</strong></em> <br>' + sqlQuery;
+}
